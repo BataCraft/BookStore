@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         const getAllbooks = async () => {
             try {
-                const res = await axios.get('http://localhost:8000/books');
+                const res = await axios.get('https://bookstorebackend-ulcg.onrender.com/books');
                 setBook(res.data.book);  // Set books data to state
                 setLoading(false);        // Set loading to false
                 
