@@ -13,7 +13,7 @@ const DeleteBook = () => {
 
     setIsLoading(true); // Start loading
     try {
-      await axios.delete(`http://localhost:8000/books/${id}`); 
+      await axios.delete(`https://bookstorebackend-ulcg.onrender.com/books/${id}`); 
       
       navigate("/"); 
     } catch (error) {

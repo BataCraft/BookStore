@@ -16,7 +16,7 @@ const UpdateBook = () => {
     const fetchOldBook = async () => {
       try {
         setIsLoading(true);
-        const res = await axios.get(`http://localhost:8000/books/${id}`);
+        const res = await axios.get(`https://bookstorebackend-ulcg.onrender.com/books/${id}`);
         setTitle(res.data.book.title);
         setAuthor(res.data.book.author);
         setPublishDate(res.data.book.publishDate);
