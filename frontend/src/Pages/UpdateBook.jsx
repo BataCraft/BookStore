@@ -37,7 +37,7 @@ const UpdateBook = () => {
     setIsLoading(true);
 
     try {
-      await axios.put(`http://localhost:8000/books/${id}`, data); // Updated to PUT
+      await axios.put(`https://bookstorebackend-ulcg.onrender.com/books/${id}`, data); // Updated to PUT
       setIsLoading(false);
       navigate("/"); // Navigate after update
     } catch (error) {

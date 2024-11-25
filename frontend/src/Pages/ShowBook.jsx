@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     const getBooks = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/books/${id}`);
+        const res = await axios.get(`https://bookstorebackend-ulcg.onrender.com/${id}`);
         setBook(res.data.book);
         setLoading(false);
       } catch (error) {
